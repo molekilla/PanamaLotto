@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout  style="@style/TitleBar">
+<!--     <ImageView style="@style/TitleBarLogo" -->
+<!--         android:contentDescription="@string/description_logo" -->
+<!--         android:src="@drawable/lotto_launcher" /> -->
+<TextView android:id="@+id/homeButton"
+style="@style/TitleBarTextLogo"
+android:text="@string/description_logo"/>
+
+<!--     <View style="@style/TitleBarSpring" /> -->
+    <ImageView style="@style/TitleBarSeparator" />
+<TextView android:id="@+id/lottoActionBarText" style="@style/TitleBarSpring" android:text="@string/app_name"/>
+    <ImageView style="@style/TitleBarSeparator" />
+    <ImageButton style="@style/TitleBarAction"
+        android:id="@+id/lottoRefreshData" android:visibility="gone"
+        android:src="@drawable/ic_title_refresh"
+         />
+<!-- android:onClick="onActionBarButtonClick" -->
+    <ProgressBar style="@style/TitleBarProgressIndicator"
+        android:id="@+id/title_refresh_progress"
+        android:visibility="gone" />
+
+    <ImageView style="@style/TitleBarSeparator" />
+    <ImageButton style="@style/TitleBarAction"
+        android:src="@drawable/ic_title_share" android:id="@+id/lottoShare"
+        android:visibility="visible" />
+</LinearLayout>
+</merge>

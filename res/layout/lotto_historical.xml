@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+     <com.ecyware.android.lottopanama.ui.ActionBarView 
+   android:id="@+id/lottoDetailHeader" 
+   layout="@layout/lotto_actionbar"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"/>
+    
+    <ExpandableListView
+    android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"></ExpandableListView>
+    <TextView android:id="@+id/android:empty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:gravity="center_vertical|center_horizontal"
+    android:text="@string/no_lotto_items"></TextView>
+</LinearLayout>

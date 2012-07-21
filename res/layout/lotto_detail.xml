@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/background1" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:id="@+id/relativeLayout1" android:gravity="right">
+
+   <com.ecyware.android.lottopanama.ui.ActionBarView 
+   android:id="@+id/lottoDetailHeader" 
+   layout="@layout/lotto_actionbar"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"/>
+
+    <TableLayout  android:layout_height="wrap_content"  android:layout_width="fill_parent" 
+      android:gravity="center_horizontal|center_vertical"
+     android:layout_marginTop="80dip" android:layout_marginLeft="20dip">
+    <TableRow>
+                  <TextView 
+        android:id="@+id/LabelOne" 
+        android:layout_height="wrap_content"
+        android:text="@string/first_prize_label" 
+          style="@style/lottoHistoryItemHeader" android:layout_weight="0.70"></TextView>    
+        <TextView 
+         android:id="@+id/lottoNumberOne"
+          android:text="[placeholder]"  
+          android:layout_height="wrap_content" 
+          style="@style/lottoHistoryItem" android:layout_weight="1"></TextView>
+ 
+    </TableRow>
+    <TableRow>
+                   <TextView 
+        android:id="@+id/LabelTwo" 
+        android:layout_height="wrap_content"
+               style="@style/lottoHistoryItemHeader"
+          android:text="@string/second_prize_label"  android:layout_weight="0.70"></TextView>    
+        <TextView 
+         android:id="@+id/lottoNumberTwo"
+          android:text="[placeholder]"  
+          android:layout_height="wrap_content" 
+          style="@style/lottoHistoryItem" android:layout_weight="1"></TextView></TableRow>
+    <TableRow>
+  <!-- Third prize  -->
+                   <TextView 
+        android:id="@+id/LabelThree" 
+        android:layout_height="wrap_content"
+               style="@style/lottoHistoryItemHeader"
+          android:text="@string/third_prize_label" android:layout_weight="0.70"></TextView>    
+        <TextView 
+         android:id="@+id/lottoNumberThree"
+          android:text="[placeholder]" 
+          android:layout_height="wrap_content" 
+          style="@style/lottoHistoryItem" android:layout_weight="1"></TextView>
+    </TableRow>    
+    <TableRow android:layout_marginTop="20dip">
+        <!-- Letters  -->
+                       <TextView 
+        android:id="@+id/LabelLetters" 
+        android:layout_height="wrap_content"
+              style="@style/lottoHistoryItemHeader"
+          android:text="@string/letters_label" android:layout_weight="0.70"></TextView>    
+        <TextView 
+         android:id="@+id/lottoLetters"
+          android:text="[placeholder]" android:layout_height="wrap_content" 
+         style="@style/lottoHistoryItem"  android:layout_weight="1" ></TextView>
+             </TableRow>
+     <TableRow>    <!-- Serie  -->
+                       <TextView 
+        android:id="@+id/LabelSerie" 
+        android:layout_height="wrap_content"
+                style="@style/lottoHistoryItemHeader"
+          android:text="@string/serie_label"  android:layout_weight="0.70"></TextView>    
+        <TextView 
+         android:id="@+id/lottoSerie"
+          android:text="[placeholder]" 
+          android:layout_height="wrap_content" 
+          style="@style/lottoHistoryItem" android:layout_weight="1" ></TextView>
+            </TableRow>
+      <TableRow><!-- Folio  -->
+                       <TextView 
+        android:id="@+id/LabelFolio" 
+        android:layout_height="wrap_content"
+                style="@style/lottoHistoryItemHeader"
+          android:text="@string/folio_label"  android:layout_weight="0.70"></TextView>    
+        <TextView 
+         android:id="@+id/lottoFolio"
+          android:text="[placeholder]" 
+          android:layout_height="wrap_content" 
+          style="@style/lottoHistoryItem" android:layout_weight="1" ></TextView></TableRow>
+    </TableLayout>
+
+ 
+ 
+                   
+    </RelativeLayout>

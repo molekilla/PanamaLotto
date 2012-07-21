@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.ecyware.android.lottopanama"
+      android:versionCode="11"
+      android:versionName="2.1">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"/>
+ <uses-permission android:name="android.permission.INTERNET" /> 
+    <application android:icon="@drawable/lotto_launcher" android:label="@string/app_name" 
+    android:name="roboguice.application.RoboApplication">
+        <activity android:name=".Dashboard" android:screenOrientation="portrait"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+      <activity android:name=".LottoDetail" android:screenOrientation="portrait"
+            android:label="@string/lottoActivityTitle"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LottoHistory" android:screenOrientation="portrait"
+            android:label="@string/lottoHistoryTitle"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LottoPyramid" android:screenOrientation="portrait"
+            android:label="@string/lottoHistoryTitle"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LottoHelp" android:screenOrientation="portrait"
+            android:label="@string/lottoHistoryTitle"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <service android:name=".logic.LottoService" android:exported="false"/>
+        <service android:name=".logic.LottoNotificationService" android:exported="false"/>
+        <provider android:name=".lottoprovider.LottoProvider" android:authorities="com.ecyware.android.lottopanama.lottoprovider.LottoProvider"/>
+    </application>
+</manifest>
